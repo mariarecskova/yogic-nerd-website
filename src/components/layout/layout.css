@@ -2,5 +2,35 @@ body {
   background-color: #fef7f7;
   margin: 0;
   padding: 0;
-  max-width: 1200px;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  font-family: Noto Serif;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: Raleway;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  font-family: Noto Serif;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: Raleway;
+  color: #fff;
+  background-color: #598584;
+  margin: 10 px;
 }

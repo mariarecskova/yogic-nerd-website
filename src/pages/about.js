@@ -1,13 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "../components/footer"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
 
 const About = () => (
   <Layout>
-    <Nav />
     <SEO title="About" />
     <h1>About me</h1>
     <img></img>
@@ -20,7 +17,6 @@ const About = () => (
     My curiosity for coding inspired me to improve my skills. In 2019 I finished a web developer course at Fraunenloop. This was followed by a 5 months intensive MERN stack bootcamp at Wild Code School. During this highly practical course we worked on several team projects with SCRUM methodology. I learned not only coding, but webdesign with Figma and Wordpress.
 Here I made a collection of my bootcamp and individual projects.</p>
     <Link to="/">Go back to the homepage</Link>
-    <Footer />
   </Layout>
 )
 

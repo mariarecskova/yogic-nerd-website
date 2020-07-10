@@ -1,14 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "../components/footer"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
 
 const Yoga = () => (
     <Layout>
         <SEO title="Yoga" />
-        <Nav />
         <h1>Yoga</h1>
         <h2>Hatha Slow Flow</h2>
         <h3><Link to="http://bisee-yoga.de/timetable/event/hatha-slow-flow-yoga/">BiSee Yoga, Bizetstrasse 43
@@ -25,7 +22,6 @@ const Yoga = () => (
         If you want to attend, please register via the Contact form.
 </p>
         <Link to="/">Go back to the homepage</Link>
-        <Footer />
     </Layout>
 )
 

@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 
 const Footer = () => (
     <div>
-        <p>Created by Maria Recskova, 2020
-</p>
-        <Link to="/legal">Legal Disclaimer</Link>
-        <Link to="/privacy">Privacy Policy</Link>
+        <p className="footer-text">Created by Maria Recskova, 2020
+        <Link className="footer-text" to="/legal">Legal Disclaimer</Link>
+            <Link className="footer-text" to="/privacy">Privacy Policy</Link>
+        </p>
     </div>
 )
 export default Footer;

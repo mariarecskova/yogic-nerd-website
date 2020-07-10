@@ -1,17 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import Nav from "../components/nav/index"
-import Featured from "../components/featured/index"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import "../pages/pageStyles/index.css"
 
-const IndexPage = () => (
+const HomePage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Nav />
-    <Featured />
+    <div className="hero-container">
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </div>
   </Layout>
 )
 
-export default IndexPage;
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "start.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+
+export default HomePage;
