@@ -1,31 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import "../pages/pageStyles/index.css"
+import { TextBox, Duality } from "../components/textBox"
+import StyledArtDirectedBackground from '../components/BackgroundSection';
 
-const HomePage = ({ data }) => (
+
+
+const HomePage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="hero-container">
-      <Img fluid={data.file.childImageSharp.fluid} />
-    </div>
+    <StyledArtDirectedBackground>
+      <TextBox>
+        <Duality>
+          Duality is a bliss. In my case, tech and yoga co-exist.
+          Coding gives me tools for endless creativity. In my projects I focus both on usability and design harmony. Yoga nurtures my body and soul. I am happy to share this gift with other people during my classes.
+      </Duality>
+      </TextBox>
+    </StyledArtDirectedBackground>
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "start.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+
 
 
 export default HomePage;

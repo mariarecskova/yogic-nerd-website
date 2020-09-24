@@ -9,7 +9,7 @@ const Nav = () => (
         <div className="nav__items">
             <a className="nav__item--left" href="/"><img src={Logo} alt="Yogic Nerd Logo" className="nav__item--logo" /></a>
             <div className="main-header">
-                <p className="header">Maria Recskova</p>
+                <p className="header" >Maria Recskova</p>
                 <p className="sub-header">Web Developer | Yoga Teacher</p>
             </div>
             <Link className={window.location.href.indexOf("about") > 0 ? "nav__item--link active" : "nav__item--link"}
